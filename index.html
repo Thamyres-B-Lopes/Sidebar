@@ -1,90 +1,95 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-    rel="stylesheet"/>
-    <link rel="stylesheet" href="assets/css/style.css">
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sidebar</title>
-   
-    </head>
-    <body>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+  </head>
+  <body>
+    <main>
+      <div class="sidebar">
+        <div id="menu-content">
+          <div id="logo">
+            <a href="./index.html"
+              ><img src="assets/images/logo.svg" alt="Logo"
+            /></a>
+          </div>
+          <div id="menu-icon">
+            <img src="assets/images/menu.svg" alt="Menu" />
+          </div>
+        </div>
 
-    <nav> 
-        <div class ="menu-nav"> 
-            <div class = "header-nav"> 
-                <img class= "img-icone"  src="assets/imagens/logo.svg" alt=" ..">
-                <button onclick="clicou()"><img src="assets/imagens/menu.svg" alt="..."></button>
+        <ul id="navigation-links">
+          <li>
+            <a href="#" class="option active search">
+              <img id="search-icon" src="assets/images/search.svg" alt="Search" />
+              <input
+                class="option-name"
+                type="text"
+                id="search-field"
+                placeholder="Buscar"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="option">
+              <img src="assets/images/grid.svg" alt="Dashboard " />
+              <span class="option-name">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="option">
+              <img src="assets/images/pet.svg" alt="Pet" />
+              <span class="option-name">Pet</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="option">
+              <img src="assets/images/user.svg" alt="Clients" />
+              <span class="option-name">Clientes</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="option">
+              <img src="assets/images/vet.svg" alt="Vet" />
+              <span class="option-name">Vet</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="option">
+              <img src="assets/images/settings.svg" alt="Settings" />
+              <span class="option-name">Ajustes</span>
+            </a>
+          </li>
+        </ul>
+        <div class="profile-content">
+          <div id="profile">
+            <div id="profile-info">
+              <div id="user-photo">
+                <img src="assets/images/photo.jpg" alt="User photo" />
+              </div>
+              <div id="text">
+                <p class="profile-name">Paula Dias</p>
+                <p class="profile-job">Coach de cães</p>
+              </div>
             </div>
-            <div class = "lateral-menu active"> 
-              <ul>
-                <img src ="assets/imagens/search.svg" alt="...">
-                <li class ="text-li">Buscar</p>
-                <ul/>
-
-            </div>
-            <div class = "lateral-menu"> 
-              <ul class = "text-ul">
-                <img src ="assets/imagens/grid.svg" alt="...">
-                <li class ="text-li"> Dashboard</li>
-                <ul/>
-
-            </div>
-            <div class = "lateral-menu"> 
-                <img src ="assets/imagens/pet.svg" alt="Icone Pet">
-                <p class ="text-li">Pets</p>
-            </div>
-
-            <div class = "lateral-menu"> 
-              <ul class = "text-ul">
-                <img src ="assets/imagens/user.svg" alt="Icone user ">
-                <li class ="text-li">Clientes</li>
-              </ul>
-            </div>
-                  
-            <div class = "lateral-menu"> 
-              <ul class = "text-ul">
-                <img src ="assets/imagens/vet.svg" alt="logo vet">
-                <li class ="text-li">Vets</li>
-            </div>
-            <div class = "lateral-menu"> 
-              <ul class =text-ul>
-                <img src ="assets/imagens/settings.svg" alt="Icone configuraçoes">
-                <li class ="text-li">Ajustes</li>
-              </ul>
-                </div>
-            </div>
-        <div class="footer-nav">
-      <div class="info-user">
-        <img src="assets/imagens/user.svg" alt="Foto do Usuário">
-        <div class="text-user">
-          <p>Laura Sabino</p>
-          <p>Veterinaria</p>
+          </div>
+          <img id="logout-icon" src="assets/images/log-out.svg" alt="Log Out" />
         </div>
       </div>
-      <img src="assets/imagens/log-out.svg" alt="Icone de Sair">
-    </div>
-  
 
-    <main>
-      <h1>Dashboard</h1>
+      <div id="container">
+        <h1>Dashboard</h1>
+      </div>
     </main>
-          
 
-      <script src="assets/js/script.js"></script>
-                
-      </nav>
-      
-      
-
-
-    
-    
-    
-
-</body>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
